@@ -1,0 +1,12 @@
+{
+  "name": "gitkeepalive",
+  "version": "1.0.0",
+  "description": "Commit every day",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
