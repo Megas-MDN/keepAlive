@@ -16,7 +16,7 @@ async function criarArquivo() {
 }
 
 criarArquivo().then(() => {
-  const callCommand = `${caminhoBatch} 'N: ${new Date()}'`;
+  const callCommand = `${caminhoBatch} ${new Date()}`;
 
   exec(`call ${callCommand}`, (error, stdout, stderr) => {
     if (error) {
