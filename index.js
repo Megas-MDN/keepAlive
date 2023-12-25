@@ -16,8 +16,8 @@ async function criarArquivo() {
 }
 
 criarArquivo().then(() => {
-  const callCommand = `${caminhoBatch} N: ${new Date()}`;
-  // return console.log(`Executando o arquivo batch: ${callCommand}`);
+  const callCommand = `${caminhoBatch} 'N: ${new Date()}'`;
+
   exec(`call ${callCommand}`, (error, stdout, stderr) => {
     if (error) {
       console.error(`Erro ao executar o arquivo batch: ${error.message}`);
