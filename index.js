@@ -16,7 +16,8 @@ async function criarArquivo() {
 }
 
 criarArquivo().then(() => {
-  const callCommand = `${caminhoBatch} "Date commit: ${new Date()}"`;
+  const mensagemCommit = `Date commit: ${new Date()}`;
+  const callCommand = `${caminhoBatch} "${mensagemCommit}"`;
 
   exec(`call ${callCommand}`, (error, stdout, stderr) => {
     if (error) {

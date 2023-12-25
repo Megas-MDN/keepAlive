@@ -1,15 +1,15 @@
 @echo off
 setlocal
 
-if '%1'=='' (
+if "%~1"=="" (
     echo Fail!
     exit /b 1
 )
 
-set 'mensagemCommit=%1'
+set "mensagemCommit=%~1"
 
 git add .
-git commit -m '%mensagemCommit%'
+git commit -m "%mensagemCommit%"
 git push
 
 echo Sucess!
